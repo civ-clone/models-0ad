@@ -1,0 +1,21 @@
+{
+  "name": "@civ-clone/models-0ad",
+  "version": "0.1.0",
+  "description": "Ancient units for civ.one's 3D map, converted from 0 A.D.'s art by Wildfire Games (CC BY-SA 3.0)",
+  "repository": "https://github.com/civ-clone/models-0ad",
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "(CC-BY-SA-3.0 AND MIT)",
+  "private": true,
+  "files": [
+    "LICENSE.md",
+    "NOTICE-0AD.txt",
+    "README.md",
+    "manifest.json",
+    "models",
+    "roster.json",
+    "tools"
+  ],
+  "scripts": {
+    "check": "python3 -I tools/check.py"
+  }
+}

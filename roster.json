@@ -1,0 +1,106 @@
+{
+  "source": {
+    "name": "0 A.D.",
+    "author": "Wildfire Games",
+    "url": "https://www.wildfiregames.com/",
+    "repository": "https://gitea.wildfiregames.com/0ad/0ad",
+    "commit": "e63c57188860336a93d2fa253fac6a34ee324d28",
+    "art": "binaries/data/mods/public/art"
+  },
+  "atlas": 128,
+  "scale": 0.039,
+  "models": {
+    "warrior": {
+      "actor": "units/athenians/infantry_javelinist_b.xml",
+      "units": [
+        "Warrior"
+      ]
+    },
+    "hoplite": {
+      "actor": "units/athenians/infantry_spearman_b.xml",
+      "units": [
+        "Spearman"
+      ]
+    },
+    "archer": {
+      "actor": "units/athenians/infantry_archer_b.xml",
+      "units": [
+        "Archer"
+      ]
+    },
+    "legionary": {
+      "actor": "units/romans/infantry_swordsman_b.xml",
+      "units": [
+        "Swordman"
+      ]
+    },
+    "pikeman": {
+      "actor": "units/macedonians/infantry_pikeman_b.xml",
+      "units": [
+        "Pikeman"
+      ]
+    },
+    "citizen": {
+      "actor": "units/athenians/citizen_male.xml",
+      "units": [
+        "Settlers"
+      ]
+    },
+    "horseman": {
+      "actor": "units/athenians/cavalry_swordsman_b_m.xml",
+      "units": [
+        "Horseman"
+      ]
+    },
+    "chariot": {
+      "actor": "units/britons/chariot_javelinist_c_m.xml",
+      "units": [
+        "Chariot"
+      ]
+    },
+    "elephant": {
+      "actor": "units/carthaginians/elephantry_c_m.xml",
+      "units": [
+        "Elephant"
+      ]
+    },
+    "onager": {
+      "actor": "units/romans/siege_onager.xml",
+      "units": [
+        "Catapult"
+      ],
+      "scale": 0.03
+    },
+    "trader": {
+      "actor": "units/athenians/trader.xml",
+      "units": [
+        "Caravan"
+      ],
+      "scale": 0.03
+    },
+    "trireme": {
+      "actor": "structures/hellenes/trireme.xml",
+      "units": [
+        "Trireme"
+      ],
+      "scale": 0.0067
+    },
+    "heavy-cavalry": {
+      "actor": "units/romans/cavalry_swordsman_c_m.xml",
+      "units": []
+    },
+    "scout": {
+      "actor": "units/germans/cavalry_scout.xml",
+      "units": []
+    },
+    "knarr": {
+      "actor": "structures/germans/ship_knarr.xml",
+      "units": [],
+      "scale": 0.0099,
+      "pose": [
+        "none",
+        0
+      ]
+    }
+  }
+}
