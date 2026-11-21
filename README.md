@@ -29,8 +29,8 @@ sets.
   - the unit types it draws, each by one model;
   - a scale where it isn't the set's own, and a pose where it isn't the first frame of its idle animation.
 
-  A model with no unit types is built but drawn for none yet: `heavy-cavalry`, `scout` and `knarr`, which could stand
-  in for `Knight`, `Explorer` and `Sail`.
+  Three stand in where 0 A.D. has no unit quite like Civilization's: Roman heavy cavalry (`heavy-cavalry`) for
+  `Knight`, a Germanic mounted scout (`scout`) for `Explorer`, and a Norse knarr (`knarr`) for `Sail`.
 - **`tools/`:** the converter that builds them (`convert.py`, `build.py`) and the check CI runs (`check.py`).
 
 ## Building them again

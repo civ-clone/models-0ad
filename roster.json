@@ -87,15 +87,21 @@
     },
     "heavy-cavalry": {
       "actor": "units/romans/cavalry_swordsman_c_m.xml",
-      "units": []
+      "units": [
+        "Knight"
+      ]
     },
     "scout": {
       "actor": "units/germans/cavalry_scout.xml",
-      "units": []
+      "units": [
+        "Explorer"
+      ]
     },
     "knarr": {
       "actor": "structures/germans/ship_knarr.xml",
-      "units": [],
+      "units": [
+        "Sail"
+      ],
       "scale": 0.0099,
       "pose": [
         "none",
