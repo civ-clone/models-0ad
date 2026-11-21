@@ -157,6 +157,7 @@
     },
     "horseman": {
       "file": "models/horseman.glb",
+      "scale": 0.02925,
       "sha256": "01b526112b97d18cf6fa7b07850e2044c908174b0391f44ef30e2ba63c010ca6",
       "extent": {
         "across": [
@@ -179,6 +180,7 @@
     },
     "chariot": {
       "file": "models/chariot.glb",
+      "scale": 0.02925,
       "sha256": "32e0e193326b7283b9cdd7aeade4ede2ec8fa61d0a1488831b2574c76b1f824c",
       "extent": {
         "across": [
@@ -292,6 +294,7 @@
     },
     "heavy-cavalry": {
       "file": "models/heavy-cavalry.glb",
+      "scale": 0.02925,
       "sha256": "adf62e706e25d9957f3208128c7dca34b36f6f8d8b6f5d2f90e7a567bda77d92",
       "extent": {
         "across": [
@@ -314,6 +317,7 @@
     },
     "scout": {
       "file": "models/scout.glb",
+      "scale": 0.02925,
       "sha256": "1d177fe70c75409e262c688710fef28d314dc05c6ba5102da67c0cb93c3980a1",
       "extent": {
         "across": [

@@ -50,13 +50,15 @@
       "actor": "units/athenians/cavalry_swordsman_b_m.xml",
       "units": [
         "Horseman"
-      ]
+      ],
+      "scale": 0.02925
     },
     "chariot": {
       "actor": "units/britons/chariot_javelinist_c_m.xml",
       "units": [
         "Chariot"
-      ]
+      ],
+      "scale": 0.02925
     },
     "elephant": {
       "actor": "units/carthaginians/elephantry_c_m.xml",
@@ -89,13 +91,15 @@
       "actor": "units/romans/cavalry_swordsman_c_m.xml",
       "units": [
         "Knight"
-      ]
+      ],
+      "scale": 0.02925
     },
     "scout": {
       "actor": "units/germans/cavalry_scout.xml",
       "units": [
         "Explorer"
-      ]
+      ],
+      "scale": 0.02925
     },
     "knarr": {
       "actor": "structures/germans/ship_knarr.xml",
