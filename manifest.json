@@ -371,7 +371,10 @@
       "Elephant": "elephant",
       "Catapult": "onager",
       "Caravan": "trader",
-      "Trireme": "trireme"
+      "Trireme": "trireme",
+      "Knight": "heavy-cavalry",
+      "Explorer": "scout",
+      "Sail": "knarr"
     }
   }
 }
