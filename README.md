@@ -20,7 +20,7 @@ sets.
   mask is lost.
 - **`manifest.json`:** the set, as civ.one's library describes a set of models:
   - its licence, with the credit to show wherever it's used (`licence.attribution`), and its credits;
-  - the scale it's drawn at;
+  - the scale it's drawn at, and any model's own where it isn't the set's;
   - each model's file and its SHA-256, how far it reaches (`extent`, in its own units), and its source;
   - which unit types each model draws (`names.unit`, by the engine's names for them).
 - **`roster.json`:** what's built:
@@ -31,6 +31,10 @@ sets.
 
   Three stand in where 0 A.D. has no unit quite like Civilization's: Roman heavy cavalry (`heavy-cavalry`) for
   `Knight`, a Germanic mounted scout (`scout`) for `Explorer`, and a Norse knarr (`knarr`) for `Sail`.
+
+  The riders (`horseman`, `heavy-cavalry` and `scout`) and the chariot are drawn at three-quarters of the set's scale,
+  close to the trader's own (`0.03`). The 3D map draws units bigger than life, as a tabletop game's figures are, and
+  at the set's own scale a horse towered over the later units' vehicles.
 - **`tools/`:** the converter that builds them (`convert.py`, `build.py`) and the check CI runs (`check.py`).
 
 ## Building them again
