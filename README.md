@@ -29,10 +29,10 @@ sets.
   - the unit types it draws, each by one model;
   - a scale where it isn't the set's own, and a pose where it isn't the first frame of its idle animation.
 
-  It no longer draws `Warrior`, `Settlers`, `Knight`, `Explorer` or `Sail`: civ.one draws them with
-  [models-realistic-cc0](https://github.com/civ-clone/models-realistic-cc0)'s, which fit Civilization's units
-  better than the stand-ins here did (a javelin-thrower, a citizen, Roman heavy cavalry, a mounted scout and a
-  knarr). Their models are in this repository's history, and its roster then builds them again.
+  The set no longer draws `Warrior`, `Settlers`, `Knight`, `Explorer` or `Sail`. civ.one draws those with the models
+  in [models-realistic-cc0](https://github.com/civ-clone/models-realistic-cc0), which fit Civilization's units better
+  than the stand-ins here did: a javelin-thrower, a citizen, Roman heavy cavalry, a mounted scout and a knarr. Their
+  models are in this repository's history, and the roster from then builds them again.
 
   The horseman and the chariot are drawn at three-quarters of the set's scale, close to the trader's own (`0.03`). The
   3D map draws units bigger than life, as a tabletop game's figures are, and at the set's own scale a horse towered
