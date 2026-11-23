@@ -11,9 +11,9 @@ sets.
 ## What's here
 
 - **`models/*.glb`:** one glTF binary for each model, standing on its origin and facing `+z`. Each is posed as it
-  stands still (the first frame of its idle animation, or as it's modelled where it has none, as the knarr hasn't),
-  with what it carries, wears and rides on it. Each draws from a texture atlas, and from a second for what's
-  see-through, such as a horse's tail.
+  stands still (the first frame of its idle animation, or as it's modelled where it has none), with what it carries,
+  wears and rides on it. Each draws from a texture atlas, and from a second for what's see-through, such as a horse's
+  tail.
 - **The owner's colour:** where 0 A.D. paints a unit in its player's colour, the atlas's alpha is the mask. Colour is
   `rgb × mix(owner, white, alpha)`, as 0 A.D. does it, and the solid atlas's material says so (`extras.playerColour`).
   Everywhere else the alpha is solid. Load the atlas with its alpha as it is, not premultiplied, or the colour under the
@@ -29,12 +29,14 @@ sets.
   - the unit types it draws, each by one model;
   - a scale where it isn't the set's own, and a pose where it isn't the first frame of its idle animation.
 
-  Three stand in where 0 A.D. has no unit quite like Civilization's: Roman heavy cavalry (`heavy-cavalry`) for
-  `Knight`, a Germanic mounted scout (`scout`) for `Explorer`, and a Norse knarr (`knarr`) for `Sail`.
+  The set no longer draws `Warrior`, `Settlers`, `Knight`, `Explorer` or `Sail`. civ.one draws those with the models
+  in [models-realistic-cc0](https://github.com/civ-clone/models-realistic-cc0), which fit Civilization's units better
+  than the stand-ins here did: a javelin-thrower, a citizen, Roman heavy cavalry, a mounted scout and a knarr. Their
+  models are in this repository's history, and the roster from then builds them again.
 
-  The riders (`horseman`, `heavy-cavalry` and `scout`) and the chariot are drawn at three-quarters of the set's scale,
-  close to the trader's own (`0.03`). The 3D map draws units bigger than life, as a tabletop game's figures are, and
-  at the set's own scale a horse towered over the later units' vehicles.
+  The horseman and the chariot are drawn at three-quarters of the set's scale, close to the trader's own (`0.03`). The
+  3D map draws units bigger than life, as a tabletop game's figures are, and at the set's own scale a horse towered
+  over the later units' vehicles.
 - **`tools/`:** the converter that builds them (`convert.py`, `build.py`) and the check CI runs (`check.py`).
 
 ## Building them again

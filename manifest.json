@@ -23,28 +23,6 @@
   ],
   "scale": 0.039,
   "models": {
-    "warrior": {
-      "file": "models/warrior.glb",
-      "sha256": "e7d6b150a3824e4fb99f7ee617edf07e8aaf742dee3c54140beb708a72886393",
-      "extent": {
-        "across": [
-          -1.437,
-          1.031
-        ],
-        "along": [
-          -0.991,
-          0.937
-        ],
-        "height": 4.341
-      },
-      "from": {
-        "actor": "units/athenians/infantry_javelinist_b.xml",
-        "pose": [
-          "Idle",
-          0
-        ]
-      }
-    },
     "hoplite": {
       "file": "models/hoplite.glb",
       "sha256": "b2b702e762e0741c7668ceb82cb1564635ecb5fe983095d4847b84935bf18749",
@@ -127,28 +105,6 @@
       },
       "from": {
         "actor": "units/macedonians/infantry_pikeman_b.xml",
-        "pose": [
-          "Idle",
-          0
-        ]
-      }
-    },
-    "citizen": {
-      "file": "models/citizen.glb",
-      "sha256": "c8cb342ada1dfbf5c83a917db83536e18c7294348e01ab23e944447b79ce9f53",
-      "extent": {
-        "across": [
-          -0.662,
-          0.694
-        ],
-        "along": [
-          -0.445,
-          0.392
-        ],
-        "height": 4.27
-      },
-      "from": {
-        "actor": "units/athenians/citizen_male.xml",
         "pose": [
           "Idle",
           0
@@ -291,94 +247,20 @@
           0
         ]
       }
-    },
-    "heavy-cavalry": {
-      "file": "models/heavy-cavalry.glb",
-      "scale": 0.02925,
-      "sha256": "adf62e706e25d9957f3208128c7dca34b36f6f8d8b6f5d2f90e7a567bda77d92",
-      "extent": {
-        "across": [
-          -1.033,
-          1.299
-        ],
-        "along": [
-          -2.797,
-          4.088
-        ],
-        "height": 6.631
-      },
-      "from": {
-        "actor": "units/romans/cavalry_swordsman_c_m.xml",
-        "pose": [
-          "Idle",
-          0
-        ]
-      }
-    },
-    "scout": {
-      "file": "models/scout.glb",
-      "scale": 0.02925,
-      "sha256": "1d177fe70c75409e262c688710fef28d314dc05c6ba5102da67c0cb93c3980a1",
-      "extent": {
-        "across": [
-          -1.039,
-          1.079
-        ],
-        "along": [
-          -2.797,
-          4.088
-        ],
-        "height": 6.077
-      },
-      "from": {
-        "actor": "units/germans/cavalry_scout.xml",
-        "pose": [
-          "Idle",
-          0
-        ]
-      }
-    },
-    "knarr": {
-      "file": "models/knarr.glb",
-      "scale": 0.0099,
-      "sha256": "a7627717eee9b195ce8f74364ef987374d3703ee07e5d3b7c6f17138ee06a128",
-      "extent": {
-        "across": [
-          -8.818,
-          8.818
-        ],
-        "along": [
-          -15.578,
-          15.578
-        ],
-        "height": 18.839
-      },
-      "from": {
-        "actor": "structures/germans/ship_knarr.xml",
-        "pose": [
-          "none",
-          0
-        ]
-      }
     }
   },
   "names": {
     "unit": {
-      "Warrior": "warrior",
       "Spearman": "hoplite",
       "Archer": "archer",
       "Swordman": "legionary",
       "Pikeman": "pikeman",
-      "Settlers": "citizen",
       "Horseman": "horseman",
       "Chariot": "chariot",
       "Elephant": "elephant",
       "Catapult": "onager",
       "Caravan": "trader",
-      "Trireme": "trireme",
-      "Knight": "heavy-cavalry",
-      "Explorer": "scout",
-      "Sail": "knarr"
+      "Trireme": "trireme"
     }
   }
 }

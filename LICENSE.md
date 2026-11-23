@@ -16,8 +16,8 @@ I made these changes, which are under the same licence:
 - **Format:** it's converted from COLLADA to glTF, its up axis turned.
 - **Textures:** only the base colour textures are kept, without their normal and specular maps. They're halved till
   no side is over 128 px, and packed into an atlas, with the rest of the atlas in their mean colour.
-- **Colours:** the colour a part is tinted by its actor (`objectcolor`: hair, and a scout's horse) is baked into its
-  texture. The alpha is used as the mask for its owner's colour, as 0 A.D. uses it, and made solid everywhere else.
+- **Colours:** the colour a part is tinted by its actor (`objectcolor`, such as hair) is baked into its texture. The
+  alpha is used as the mask for its owner's colour, as 0 A.D. uses it, and made solid everywhere else.
   What 0 A.D. blends as see-through (`basic_trans`: tails and manes) is cut out where it's less than half solid.
 
 You may use, change and share them, for any purpose, if you:
