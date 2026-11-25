@@ -18,12 +18,14 @@
     positions' bounds as its accessor says;
   - each image is a PNG (and says so), 8-bit RGBA, its sides powers of two, its pixels all there;
   - its extent is as its points reach, rounded, and as the manifest says.
+- Each model's name is one civ.one can serve it by: small letters, digits and hyphens.
 - Each unit type is drawn by one model, the one the roster says, as is each plant (by the 3D map's kind, or a kind on a
   terrain of its own), and no file in models/ is left over.
 """
 import hashlib
 import json
 import math
+import re
 import os
 import struct
 import sys
@@ -272,6 +274,9 @@ for name, entry in roster['models'].items():
 for name in models:
     if name not in roster['models']:
         problem(f'{name}: in manifest.json, not in roster.json')
+    # As civ.one names a hosted set's files by its models' names: small letters, digits and hyphens.
+    if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', name):
+        problem(f'{name}: not a name civ.one can serve a model by (small letters, digits and hyphens)')
 
 drawn_by = {}
 grown_by = {}

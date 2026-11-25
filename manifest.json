@@ -314,8 +314,8 @@
         ]
       }
     },
-    "date_palm": {
-      "file": "models/date_palm.glb",
+    "date-palm": {
+      "file": "models/date-palm.glb",
       "sha256": "3d16bf003a9707260b14b31f2e349e7ef0d0a7dfc728dd332ab2aeb267cae123",
       "extent": {
         "across": [
@@ -336,8 +336,8 @@
         ]
       }
     },
-    "dead_tree": {
-      "file": "models/dead_tree.glb",
+    "dead-tree": {
+      "file": "models/dead-tree.glb",
       "sha256": "dca280a05372e0060ab0b309a0071b506c2b7928eefcec06c24355d74d91efbb",
       "extent": {
         "across": [
@@ -376,8 +376,8 @@
       "conifer": "pine",
       "broadleaf": "beech",
       "Jungle:broadleaf": "teak",
-      "palm": "date_palm",
-      "deadTree": "dead_tree"
+      "palm": "date-palm",
+      "deadTree": "dead-tree"
     }
   }
 }

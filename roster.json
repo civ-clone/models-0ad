@@ -108,7 +108,7 @@
       ],
       "atlas": 256
     },
-    "date_palm": {
+    "date-palm": {
       "actor": "flora/trees/palm_date.xml",
       "plants": [
         "palm"
@@ -119,7 +119,7 @@
       ],
       "atlas": 256
     },
-    "dead_tree": {
+    "dead-tree": {
       "actor": "flora/trees/tree_dead.xml",
       "plants": [
         "deadTree"
