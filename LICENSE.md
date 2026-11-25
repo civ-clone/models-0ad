@@ -10,15 +10,19 @@ licence: https://creativecommons.org/licenses/by-sa/3.0/
 
 I made these changes, which are under the same licence:
 - **Variants:** of each unit's variants, only the first of each kind is used (its clothes, face, shield and so on).
-- **Pose:** each unit is posed as it stands still, as its idle animation's first frame has it.
+- **Pose:** each unit is posed as it stands still, as its idle animation's first frame has it. Each tree stands as
+  it's modelled.
 - **Parts:** its parts and what it carries are put together in one model. A part with no place on it to go (the
   onager's stone, which it holds only as it throws) is left out.
 - **Format:** it's converted from COLLADA to glTF, its up axis turned.
 - **Textures:** only the base colour textures are kept, without their normal and specular maps. They're halved till
-  no side is over 128 px, and packed into an atlas, with the rest of the atlas in their mean colour.
+  no side is over 128 px (256 px for the trees), and packed into an atlas, with the rest of the atlas in their mean
+  colour. Where a part's texture coordinates reach past its texture's edge, as the beech's leaves do, they're stopped
+  at it, so less of the texture shows on those parts.
 - **Colours:** the colour a part is tinted by its actor (`objectcolor`, such as hair) is baked into its texture. The
   alpha is used as the mask for its owner's colour, as 0 A.D. uses it, and made solid everywhere else.
-  What 0 A.D. blends as see-through (`basic_trans`: tails and manes) is cut out where it's less than half solid.
+  What 0 A.D. blends as see-through (`basic_trans`: units' tails and manes, and the trees, leaves and trunks) is cut
+  out where it's less than half solid.
 
 You may use, change and share them, for any purpose, if you:
 - credit Wildfire Games as the original author, with a link to https://www.wildfiregames.com/ and to the licence;

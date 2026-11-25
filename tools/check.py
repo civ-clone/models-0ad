@@ -25,8 +25,8 @@
 import hashlib
 import json
 import math
-import re
 import os
+import re
 import struct
 import sys
 import zlib
@@ -281,11 +281,15 @@ for name in models:
 drawn_by = {}
 grown_by = {}
 for name, entry in roster['models'].items():
+    if not entry.get('units') and not entry.get('plants'):
+        problem(f'{name}: draws no unit and no plant in roster.json')
     for unit in entry.get('units', []):
         if unit in drawn_by:
             problem(f'unit {unit}: drawn by both {drawn_by[unit]} and {name} in roster.json')
         drawn_by.setdefault(unit, name)
     for plant in entry.get('plants', []):
+        if not re.fullmatch(r'([A-Z][A-Za-z]*:)?[a-z][A-Za-z]*', plant):
+            problem(f'plant {plant}: not a kind of plant (`conifer`), or one on a terrain (`Jungle:broadleaf`)')
         if plant in grown_by:
             problem(f'plant {plant}: drawn by both {grown_by[plant]} and {name} in roster.json')
         grown_by.setdefault(plant, name)
