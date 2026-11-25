@@ -89,7 +89,7 @@
     "beech": {
       "actor": "flora/trees/european_beech.xml",
       "plants": [
-        "broadleaf"
+        "birch"
       ],
       "pose": [
         "none",
@@ -123,6 +123,61 @@
       "actor": "flora/trees/tree_dead.xml",
       "plants": [
         "deadTree"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "fir": {
+      "actor": "flora/trees/fir_sapling.xml",
+      "plants": [
+        "fir"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "large-oak": {
+      "actor": "flora/trees/oak_large.xml",
+      "plants": [
+        "broadleaf"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "holm-oak": {
+      "actor": "flora/trees/oak_holly.xml",
+      "plants": [
+        "oak"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "tropical-tree": {
+      "actor": "flora/trees/tree_tropic.xml",
+      "plants": [
+        "tropical"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "banana": {
+      "actor": "flora/trees/banana.xml",
+      "plants": [
+        "banana"
       ],
       "pose": [
         "none",

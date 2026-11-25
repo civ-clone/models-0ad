@@ -357,6 +357,116 @@
           0
         ]
       }
+    },
+    "fir": {
+      "file": "models/fir.glb",
+      "sha256": "078735fa58be28487f1d4546b3b54f6b7a004c4cbb9b24797676a87e1b6fe243",
+      "extent": {
+        "across": [
+          -4.57,
+          3.993
+        ],
+        "along": [
+          -4.262,
+          4.571
+        ],
+        "height": 9.805
+      },
+      "from": {
+        "actor": "flora/trees/fir_sapling.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "large-oak": {
+      "file": "models/large-oak.glb",
+      "sha256": "0b366fd088f1927c1007741848ff0f20fc5fe97a8b86e767a7bd9f628c91c0b4",
+      "extent": {
+        "across": [
+          -9.852,
+          8.723
+        ],
+        "along": [
+          -7.699,
+          8.772
+        ],
+        "height": 20.78
+      },
+      "from": {
+        "actor": "flora/trees/oak_large.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "holm-oak": {
+      "file": "models/holm-oak.glb",
+      "sha256": "75efdd18fcf2d94b710b07146286678efb4cab809970b703215ca27233be5a71",
+      "extent": {
+        "across": [
+          -9.356,
+          7.62
+        ],
+        "along": [
+          -7.799,
+          9.379
+        ],
+        "height": 18.992
+      },
+      "from": {
+        "actor": "flora/trees/oak_holly.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "tropical-tree": {
+      "file": "models/tropical-tree.glb",
+      "sha256": "72cebe848fbbe36598008ec5c8e90524852013d1b958b0bc3c0ca738e61765a9",
+      "extent": {
+        "across": [
+          -13.535,
+          11.906
+        ],
+        "along": [
+          -13.878,
+          12.439
+        ],
+        "height": 22.414
+      },
+      "from": {
+        "actor": "flora/trees/tree_tropic.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "banana": {
+      "file": "models/banana.glb",
+      "sha256": "4b5883a36cec815b8323837111dca540855b66300b937d0774d804a2802d1622",
+      "extent": {
+        "across": [
+          -4.223,
+          5.012
+        ],
+        "along": [
+          -4.539,
+          4.596
+        ],
+        "height": 11.058
+      },
+      "from": {
+        "actor": "flora/trees/banana.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
     }
   },
   "names": {
@@ -374,10 +484,15 @@
     },
     "plant": {
       "conifer": "pine",
-      "broadleaf": "beech",
+      "birch": "beech",
       "Jungle:broadleaf": "teak",
       "palm": "date-palm",
-      "deadTree": "dead-tree"
+      "deadTree": "dead-tree",
+      "fir": "fir",
+      "broadleaf": "large-oak",
+      "oak": "holm-oak",
+      "tropical": "tropical-tree",
+      "banana": "banana"
     }
   }
 }
