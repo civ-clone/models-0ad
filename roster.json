@@ -74,6 +74,61 @@
         "Trireme"
       ],
       "scale": 0.0067
+    },
+    "pine": {
+      "actor": "flora/trees/pine.xml",
+      "plants": [
+        "conifer"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "beech": {
+      "actor": "flora/trees/european_beech.xml",
+      "plants": [
+        "broadleaf"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "teak": {
+      "actor": "flora/trees/teak.xml",
+      "plants": [
+        "Jungle:broadleaf"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "date_palm": {
+      "actor": "flora/trees/palm_date.xml",
+      "plants": [
+        "palm"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
+    },
+    "dead_tree": {
+      "actor": "flora/trees/tree_dead.xml",
+      "plants": [
+        "deadTree"
+      ],
+      "pose": [
+        "none",
+        0
+      ],
+      "atlas": 256
     }
   }
 }

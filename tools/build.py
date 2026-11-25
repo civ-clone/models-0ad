@@ -36,11 +36,17 @@ if only is not None:
         sys.exit(f'not in roster.json: {", ".join(unknown)}')
 
 drawn_by = {}
+grown_by = {}
 for name, entry in roster['models'].items():
-    for unit in entry['units']:
+    for unit in entry.get('units', []):
         if unit in drawn_by:
             sys.exit(f'unit {unit}: drawn by both {drawn_by[unit]} and {name} in roster.json')
         drawn_by[unit] = name
+    # The plants it draws, by the 3D map's kinds (`conifer`), or a kind on a terrain of its own (`Jungle:broadleaf`).
+    for plant in entry.get('plants', []):
+        if plant in grown_by:
+            sys.exit(f'plant {plant}: drawn by both {grown_by[plant]} and {name} in roster.json')
+        grown_by[plant] = name
 
 # The converter, by its contents, as it records itself in what it writes.
 converter = hashlib.sha256(open(os.path.join(HERE, 'convert.py'), 'rb').read()).hexdigest()[:16]
@@ -121,7 +127,7 @@ manifest = {
     'schema': 1,
     'kind': 'models',
     'id': '0ad-ancient',
-    'name': '0 A.D.: ancient units',
+    'name': '0 A.D.: ancient units and trees',
     'source': 'hosted',
     # As it's shown wherever the set is: the credit CC BY-SA asks for.
     'licence': {
@@ -143,16 +149,23 @@ manifest = {
         }
     ],
     # How big a model is drawn: the 3D map's squares to each of 0 A.D.'s units, a person as tall as the built-in set's.
+    #  A tree is drawn by its height (`extent`), as tall as the map's own trees, not at this scale.
     'scale': roster['scale'],
     'models': models,
     'names': {
         'unit': {
             unit: drawn_by[unit] for unit in drawn_by
-        }
+        },
+        'plant': {
+            plant: grown_by[plant] for plant in grown_by
+        },
     },
 }
 
 with open(os.path.join(ROOT, 'manifest.json'), 'w') as f:
     f.write(json.dumps(manifest, indent=2) + '\n')
 
-print(f'manifest.json: {len(models)} models, {len(manifest["names"]["unit"])} unit types')
+print(
+    f'manifest.json: {len(models)} models, {len(manifest["names"]["unit"])} unit types, '
+    f'{len(manifest["names"]["plant"])} plants'
+)

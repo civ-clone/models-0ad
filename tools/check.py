@@ -18,7 +18,8 @@
     positions' bounds as its accessor says;
   - each image is a PNG (and says so), 8-bit RGBA, its sides powers of two, its pixels all there;
   - its extent is as its points reach, rounded, and as the manifest says.
-- Each unit type is drawn by one model, the one the roster says, and no file in models/ is left over.
+- Each unit type is drawn by one model, the one the roster says, as is each plant (by the 3D map's kind, or a kind on a
+  terrain of its own), and no file in models/ is left over.
 """
 import hashlib
 import json
@@ -273,15 +274,24 @@ for name in models:
         problem(f'{name}: in manifest.json, not in roster.json')
 
 drawn_by = {}
+grown_by = {}
 for name, entry in roster['models'].items():
-    for unit in entry['units']:
+    for unit in entry.get('units', []):
         if unit in drawn_by:
             problem(f'unit {unit}: drawn by both {drawn_by[unit]} and {name} in roster.json')
         drawn_by.setdefault(unit, name)
+    for plant in entry.get('plants', []):
+        if plant in grown_by:
+            problem(f'plant {plant}: drawn by both {grown_by[plant]} and {name} in roster.json')
+        grown_by.setdefault(plant, name)
 
 units = manifest.get('names', {}).get('unit', {})
 if units != drawn_by:
     problem(f'manifest draws unit types {units}, roster says {drawn_by}')
+
+plants = manifest.get('names', {}).get('plant', {})
+if plants != grown_by:
+    problem(f'manifest draws plants {plants}, roster says {grown_by}')
 
 folder = os.path.join(ROOT, 'models')
 files = {os.path.join('models', f) for f in os.listdir(folder)} if os.path.isdir(folder) else set()
@@ -292,4 +302,4 @@ if problems:
     print('\n'.join(problems))
     sys.exit(1)
 
-print(f'ok: {len(models)} models, {len(units)} unit types')
+print(f'ok: {len(models)} models, {len(units)} unit types, {len(plants)} plants')

@@ -2,7 +2,7 @@
   "schema": 1,
   "kind": "models",
   "id": "0ad-ancient",
-  "name": "0 A.D.: ancient units",
+  "name": "0 A.D.: ancient units and trees",
   "source": "hosted",
   "licence": {
     "name": "CC BY-SA 3.0",
@@ -247,6 +247,116 @@
           0
         ]
       }
+    },
+    "pine": {
+      "file": "models/pine.glb",
+      "sha256": "3358a1292021f234ae43db6162dee00552cd5072f39cf274efa818d4c5f83ea2",
+      "extent": {
+        "across": [
+          -8.141,
+          8.148
+        ],
+        "along": [
+          -8.082,
+          8.264
+        ],
+        "height": 19.066
+      },
+      "from": {
+        "actor": "flora/trees/pine.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "beech": {
+      "file": "models/beech.glb",
+      "sha256": "87bd733b825c4df7b195fbb0fd9b4499f4821b449fa3d2119f6e8bc0072c1ecf",
+      "extent": {
+        "across": [
+          -5.321,
+          4.843
+        ],
+        "along": [
+          -5.585,
+          4.803
+        ],
+        "height": 19.378
+      },
+      "from": {
+        "actor": "flora/trees/european_beech.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "teak": {
+      "file": "models/teak.glb",
+      "sha256": "4dc71045d8059a7b0a81fd1faea75d20a6bd04345761cb873738d895e994334c",
+      "extent": {
+        "across": [
+          -11.271,
+          12.605
+        ],
+        "along": [
+          -11.54,
+          13.574
+        ],
+        "height": 30.16
+      },
+      "from": {
+        "actor": "flora/trees/teak.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "date_palm": {
+      "file": "models/date_palm.glb",
+      "sha256": "3d16bf003a9707260b14b31f2e349e7ef0d0a7dfc728dd332ab2aeb267cae123",
+      "extent": {
+        "across": [
+          -6.591,
+          6.101
+        ],
+        "along": [
+          -6.38,
+          6.571
+        ],
+        "height": 22.681
+      },
+      "from": {
+        "actor": "flora/trees/palm_date.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
+    },
+    "dead_tree": {
+      "file": "models/dead_tree.glb",
+      "sha256": "dca280a05372e0060ab0b309a0071b506c2b7928eefcec06c24355d74d91efbb",
+      "extent": {
+        "across": [
+          -7.612,
+          7.356
+        ],
+        "along": [
+          -6.756,
+          7.817
+        ],
+        "height": 21.042
+      },
+      "from": {
+        "actor": "flora/trees/tree_dead.xml",
+        "pose": [
+          "none",
+          0
+        ]
+      }
     }
   },
   "names": {
@@ -261,6 +371,13 @@
       "Catapult": "onager",
       "Caravan": "trader",
       "Trireme": "trireme"
+    },
+    "plant": {
+      "conifer": "pine",
+      "broadleaf": "beech",
+      "Jungle:broadleaf": "teak",
+      "palm": "date_palm",
+      "deadTree": "dead_tree"
     }
   }
 }
