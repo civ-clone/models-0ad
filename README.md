@@ -6,8 +6,9 @@ Units and trees for [civ.one](https://civ.one)'s 3D map, converted from [0 A.D.]
 
 0 A.D.'s units are realistic and finely made, but they're all ancient: soldiers, ships and siege engines up to the
 Roman era. So this set covers the early units, and the 3D map draws the rest with its own figures, or with other
-sets. Its trees are as finely made, and few-sided enough to stand by the thousand in a forest: a pine, a beech, a
-teak, a date palm and a dead tree.
+sets. Its trees are as finely made, and few-sided enough to stand by the thousand in a forest: a pine and a fir; a
+large oak, a holm oak and a beech, drawn as the map's birch; a teak, a tropical tree, a date palm and a banana; and a
+dead tree.
 
 ## What's here
 
@@ -24,11 +25,12 @@ teak, a date palm and a dead tree.
   - the scale it's drawn at, and any model's own where it isn't the set's;
   - each model's file and its SHA-256, how far it reaches (`extent`, in its own units), and its source;
   - which unit types each model draws (`names.unit`, by the engine's names for them);
-  - which plants each model draws (`names.plant`), by the 3D map's kinds of plant: here the trees, `conifer`,
-    `broadleaf`, `palm` and `deadTree`, or a kind on a terrain of its own, as `Jungle:broadleaf`, which is meant to be
-    looked up first. A tree is meant to be drawn as tall as the map's own trees of its kind, by its height over its
-    origin (`extent.height`), not at the set's scale. A tree stands on its origin, as 0 A.D. plants it, though the
-    teak's and the dead tree's roots reach below it.
+  - which plants each model draws (`names.plant`), by the 3D map's kinds of plant: here the trees, `conifer`, `fir`,
+    `broadleaf`, `oak`, `birch`, `tropical`, `palm`, `banana` and `deadTree`, or a kind on a terrain of its own, as
+    `Jungle:broadleaf`, which is meant to be looked up first. Where a set has no model for a kind, the map draws its
+    base kind's (a fir's is a conifer's, an oak's and a birch's a broadleaf's). A tree is meant to be drawn as tall as
+    the map's own trees of its kind, by its height over its origin (`extent.height`), not at the set's scale. A tree
+    stands on its origin, as 0 A.D. plants it, though the teak's and the dead tree's roots reach below it.
 - **`roster.json`:** what's built:
   - the 0 A.D. commit it's built from;
   - each model's 0 A.D. actor;
@@ -68,11 +70,11 @@ compress the atlases differently, though their pixels are the same.
 - **Pose:** it poses the skinned meshes as the animation says; a tree, which has none, stands as it's modelled
   (`none`).
 - **Axes:** it turns each file's up axis to glTF's.
-- **Atlas:** it packs each part's base texture into the atlas, halved till no side is over 128 px (256 for the
-  trees, whose leaves are cut out of theirs, and thin out when halved further). A texture's coordinates are stopped
-  at its edge: the beech's leaves reach past theirs, so less of its texture shows on them than in 0 A.D. Each part has 8 px
-  of its own edges round it, and the rest of the atlas is the parts' mean colour, so the smaller copies a far-off map
-  is drawn with don't darken their edges.
+- **Atlas:** it packs each part's base texture into the atlas, halved till no side is over 128 px (256 for the trees,
+  whose leaves are cut out of theirs, and thin out when halved further). A texture's coordinates are stopped at its
+  edge: the beech's, the large oak's and the tropical tree's leaves reach past theirs, so less of their textures show on
+  them than in 0 A.D. (#8). Each part has 8 px of its own edges round it, and the rest of the atlas is the parts' mean
+  colour, so the smaller copies a far-off map is drawn with don't darken their edges.
 
 ## Licence
 
